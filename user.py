@@ -14,4 +14,5 @@ class User(object):
         self.addresses.append(adr)
 
     def remove_addr(self, index):
-        self.addresses.pop(index)
+        if index < len(self.add_address):
+            self.addresses.pop(index)
