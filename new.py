@@ -1,7 +1,7 @@
 from typing import  List
 
 
-class User(object):
+class UserNew(object):
     __slots__ = ['name', 'surname', 'dob', 'addresses']
 
     def __init__(self, name: str, surname: str, dob: int, addresses: List):
@@ -15,4 +15,4 @@ class User(object):
 
     def remove_addr(self, index):
         if index < len(self.addresses):
-        	self.addresses.pop(index)
+            self.addresses.pop(index)
